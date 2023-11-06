@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+    <style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.calculator-screen {
+			width: 100%;
+			font-size: 5rem;
+			height: 80px;
+			border: none;
+			background-color: #252525;
+			color: #fff;
+			text-align: right;
+			padding-right: 20px;
+			padding-left: 10px;
+		}
+
+    </style>
+	<script>
+		function calculate() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+
+
+
+			var num2 = Math.floor(Math.random() * 100) + 1;
+			
+			
+			var operator = document.getElementById("operator").value;
+			var result;
+
+			if (operator == "+") {
+				result = num1 + num2;
+			} else if (operator == "-") {
+				result = num1 - num2;
+			} else if (operator == "*") {
+				result = num1 * num2;
+			} else if (operator == "/") {
+				result = num1 / num2;
+			}
+
+			var userResult = parseFloat(document.getElementById("result").value);
+
+
+			document.getElementById("result").value = result;
+			document.getElementById("num2").value = "";
+			document.getElementById("num2").placeholder = num2;
+		}
+
+		window.onload = calculate;
+	</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+
+	<form>
+		<label for="num1">Number 1:</label>
+		<input type="number" id="num1" name="num1"><br>
+
+		<label for="num2">Number 2:</label>
+		<input type="number" id="num2" name="num2"><br>
+
+		<label for="operator">Operator:</label>
+		<select id="operator" name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select><br>
+
+		<input type="button" value="Calculate" onclick="calculate()"><br>
+
+		Result: <input type="text" id="result" name="result">
+	</form>
+
+</body>
+</html>
