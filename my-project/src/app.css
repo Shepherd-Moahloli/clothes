@@ -244,7 +244,7 @@ nav ul li:hover {
 }
 
 #searchBar {
-  background-color: red;
+  background-color: #adadad;
   width: 100vw;
   height: 50vh;
   z-index: 1000;
