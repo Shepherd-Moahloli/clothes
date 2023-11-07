@@ -235,26 +235,56 @@ nav ul li:hover {
 }
 
 #searchForm button {
-  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #bdbdbd;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#searchForm button:hover {
+  background-color: #adadad;
+  color: #000;
 }
 
 #searchForm input {
   width: 100%;
-  background-color: #adadad;
+  height: 1rem;
+  margin: 0;
+  background-color: #bdbdbd;
+  border: none;
 }
 
 #searchBar {
-  background-color: #adadad;
-  width: 100vw;
-  height: 50vh;
-  z-index: 1000;
+  background-color: #c9c9c9;
+  width: 95vw;
+  height: 40vh;
+  z-index: 10000;
   display: grid;
-
+  border-radius: 1rem;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 10% 80% 10%;
   padding: 0;
+  margin: auto 2rem;
+}
+
+#searchForm img {
+  width: 1rem;
+  padding: 0;
   margin: 0;
 }
+
+nav ul li.active {
+  color: #000;
+  font-weight: bolder;
+}
+
+nav ul li.active::after {
+  width: 100%;
+  left: 0;
+}
+
 article header {
   font-size: 2rem;
   padding: 0.5rem 0;
