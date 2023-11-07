@@ -275,7 +275,7 @@ a {
 
 #next-collection {
   display: grid;
-  grid-template-rows: 10% 100% 80%;
+  grid-template-rows: 10% 90% 80%;
   margin: 0 auto;
   grid-column-start: 2;
   grid-row-start: 3;
@@ -305,7 +305,7 @@ a {
   grid-template-columns: 50% 50%;
   grid-template-rows: 5% 90% 5%;
   padding: 2rem;
-  height: 80%;
+  height: 70%;
   filter: drop-shadow(15px 15px 9px #e4e3e3);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -343,7 +343,7 @@ a {
   margin: 0 auto;
   color: #000;
   grid-row-start: 2;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 0 0 1.5rem 0;
 }
 
