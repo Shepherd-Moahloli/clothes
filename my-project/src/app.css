@@ -226,6 +226,35 @@ nav ul li:hover {
   font-weight: bolder;
 }
 
+#searchForm {
+  display: flex;
+  width: 100vw;
+  column-span: 2;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#searchForm button {
+  padding: 1rem;
+}
+
+#searchForm input {
+  width: 100%;
+  background-color: #adadad;
+}
+
+#searchBar {
+  background-color: red;
+  width: 100vw;
+  height: 50vh;
+  z-index: 1000;
+  display: grid;
+
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 80% 10%;
+  padding: 0;
+  margin: 0;
+}
 article header {
   font-size: 2rem;
   padding: 0.5rem 0;
@@ -417,7 +446,7 @@ a {
 }
 
 form {
-  max-width: 600px;
+  max-width: 100vw;
   margin: auto;
   font-size: 1.3rem;
   font-family: sans-serif;

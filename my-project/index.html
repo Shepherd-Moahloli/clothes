@@ -52,11 +52,23 @@
           </a>
           <nav>
             <ul>
-              <li>SEARCH</li>
+              <li id="search">SEARCH</li>
               <li>ACCOUNT</li>
               <li>CART</li>
             </ul>
           </nav>
+          <div id="searchBar">
+            <form id="searchForm" style="display: none">
+              <input
+                type="text"
+                id="searchInput"
+                name="searchInput"
+                placeholder="SEARCH"
+                required
+              />
+              <button type="submit">SEARCH</button>
+            </form>
+          </div>
         </div>
         <div id="collection">
           <p>SPRING / SUMMER COLLECTION 2024</p>
@@ -125,5 +137,6 @@
         </div>
       </article>
     </main>
+    <script defer src="js/main.js"></script>
   </body>
 </html>
