@@ -1,3 +1,5 @@
+import Fuse from "fuse.js";
+
 document.getElementById("search").addEventListener("click", function () {
   document.getElementById("searchForm").style.display = "block";
 });
@@ -7,7 +9,7 @@ var list = [
   "MEN",
   "WOMEN",
   "SPRING/SUMMER COLLECTION 2024",
-  "KANYE KRAZY DENIM",
+  "KANYE KRAZY COLLECTION 2023",
   "CONTACT",
   "ACCOUNT",
 ];
@@ -18,6 +20,8 @@ var options = {
   threshold: 0.4,
   maxPatternLength: 32,
 };
+
+var colors = ["#bdbdbd", "#bdbdbd", "#bdbdbd"];
 
 var fuse = new Fuse(list, options);
 
@@ -33,21 +37,40 @@ document
     if (result.length === 0) {
       alert("The word is not available");
     } else {
-      result.forEach(function (match) {
+      result.forEach(function (match, index) {
         var resultDiv = document.createElement("div");
         resultDiv.textContent = match.item;
+        resultDiv.style.margin = "10px";
+        resultDiv.style.borderRadius = "1rem";
+        resultDiv.style.paddingTop = "10px";
+        resultDiv.style.height = "40px";
+        resultDiv.style.cursor = "pointer";
+
+        resultDiv.onmouseover = function () {
+          resultDiv.style.backgroundColor = "#bdbdbd";
+        };
+        resultDiv.onmouseout = function () {
+          resultDiv.style.backgroundColor = "";
+        };
+
         resultsContainer.appendChild(resultDiv);
       });
+
+      window.location.hash = searchTerm;
     }
   });
 
-document.getElementById("search").addEventListener("click", function () {
+document.getElementById("search").addEventListener("click", function (event) {
   var searchBar = document.getElementById("searchBar");
   var searchForm = document.getElementById("searchForm");
   var searchLi = document.getElementById("search");
   var searchTerm = document.getElementById("searchTerm");
 
-  if (searchForm.style.display === "flex" && searchTerm.value === "") {
+  if (
+    searchForm.style.display === "flex" &&
+    searchTerm.value.trim() === "" &&
+    event.type !== "submit"
+  ) {
     searchBar.style.display = "none";
     searchForm.style.display = "none";
     searchLi.classList.remove("active");
