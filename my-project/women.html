@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashion</title>
+    <link rel="stylesheet" href="src/app.css" />
+  </head>
+
+  <body>
+    <main>
+
+      <article>
+        <div id="shop">
+          <nav>
+            <ul>
+                <a href="women.html"><li>WOMEN</li></a>
+                <li>MEN</li>
+              <li>COLLECTION</li>
+            </ul>
+          </nav>
+          <a href="index.html">
+            <header>HOOD REVENGE</header>
+          </a>
+          <nav>
+              <ul>
+                  <li id="search">SEARCH</li>
+                  <li>ACCOUNT</li>
+                  <li>CART</li>
+                </ul>
+            </nav>
+            <div id="searchBar" style="display: none">
+                <form id="searchForm" style="display: none">
+              <div id="inputContainer">
+                <input
+                  type="text"
+                  id="searchTerm"
+                  name="searchInput"
+                  placeholder="SEARCH"
+                  required
+                />
+                <button id="buttonId">
+                  <img src="images/xmark-solid.svg" alt="close-icon" />
+                </button>
+            </div>
+            <div id="resultsContainer"></div>
+        </form>
+    </div>
+    <div id="wordLocation"></div>
+</div>
+<div id="womenContainer">
+        <div id="womenCollection">
+         <p id="small" >WOMEN | READY-TO-WEAR</p>
+         <h2>READY-TO-WEAR</h2>
+         <p>
+           HOOD REVENGE BRINGS TO YOU THE LATEST COLLECTION TO EVER DROP IN HISTORY
+           AND THESE ARE READY TO WEAR CLOTHES THAT ARE COMFORTABLE FOR WOMEN AND
+           ANYONE REALLY.
+         </p>
+        </div>
+     <div id="womenClothes">
+        <ul class="flex-container" >
+            <li>
+                <img src="images/image00010-removebg-preview.png" alt="">
+            </li>
+            <li><img src="images/image00046-removebg-preview.png" alt=""></li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+     </div>
+        <div id="news">
+                <form>
+                  <h4>RECIEVE THE NEWSLETTER</h4>
+                  <p>
+                    TO STAY UPDATED ON OUR LATEST DROP, EVENTES AND EXCLUSIVE
+                    CONTENT
+                  </p>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ENTER EMAIL ADDRESS"
+                    required
+                  />
+
+                  <button type="submit">SUBMIT</button>
+                </form>
+                <footer>
+                  <div id="icons">
+                    <h3>FOLLOW US</h3>
+                    <img src="images/whatsapp.svg" alt="whatsapp-icon" />
+                    <img src="images/instagram.svg" alt="instagram-icon" />
+                    <img src="images/square-facebook.svg" alt="facebook-icon" />
+                  </div>
+                  <p>&copy; 2023 HOOD REVENGE</p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6/dist/fuse.basic.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

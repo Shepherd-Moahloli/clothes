@@ -30,6 +30,11 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+    console.log(
+      "Search bar display value:",
+      document.getElementById("searchForm").style.display
+    );
+
     var searchTerm = document.getElementById("searchTerm").value;
     var result = fuse.search(searchTerm);
     var resultsContainer = document.getElementById("resultsContainer");
@@ -89,3 +94,5 @@ document.getElementById("buttonId").addEventListener("click", function () {
   searchBar.style.display = "none";
   searchLi.classList.remove("active");
 });
+
+// Mouse over event
