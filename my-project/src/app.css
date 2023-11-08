@@ -230,6 +230,7 @@ nav ul li:hover {
   display: flex;
   width: 100vw;
   column-span: 2;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
@@ -254,6 +255,16 @@ nav ul li:hover {
   margin: 0;
   background-color: #bdbdbd;
   border: none;
+}
+
+#inputContainer {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+#resultsContainer {
+  width: 95%;
 }
 
 #searchBar {

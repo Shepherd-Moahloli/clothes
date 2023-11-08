@@ -1,0 +1,19 @@
+{
+  "name": "clothes",
+  "version": "1.0.0",
+  "description": "clothing-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shepherd-Moahloli/clothes.git"
+  },
+  "author": "Shepherd Moahloli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shepherd-Moahloli/clothes/issues"
+  },
+  "homepage": "https://github.com/Shepherd-Moahloli/clothes#readme"
+}

@@ -59,16 +59,19 @@
           </nav>
           <div id="searchBar" style="display: none">
             <form id="searchForm" style="display: none">
-              <input
-                type="text"
-                id="searchInput"
-                name="searchInput"
-                placeholder="SEARCH"
-                required
-              />
-              <button type="submit" id="buttonId">
-                <img src="images/xmark-solid.svg" alt="close-icon" />
-              </button>
+              <div id="inputContainer">
+                <input
+                  type="text"
+                  id="searchTerm"
+                  name="searchInput"
+                  placeholder="SEARCH"
+                  required
+                />
+                <button id="buttonId">
+                  <img src="images/xmark-solid.svg" alt="close-icon" />
+                </button>
+              </div>
+              <div id="resultsContainer"></div>
             </form>
           </div>
         </div>
@@ -139,6 +142,7 @@
         </div>
       </article>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6/dist/fuse.basic.min.js"></script>
     <script defer src="js/main.js"></script>
   </body>
 </html>
