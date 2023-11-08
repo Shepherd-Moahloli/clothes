@@ -460,6 +460,7 @@ a {
   display: grid;
   place-items: center;
   grid-template-columns: 50% 50%;
+  gap: 5rem 0;
   height: 100vh;
 }
 
@@ -472,7 +473,7 @@ a {
 
 .flex-container li {
   width: 70%;
-  height: 75%;
+  height: 90%;
   padding: 0 1rem;
   list-style: none;
   flex: 1;
@@ -483,8 +484,58 @@ a {
   padding: 10px;
 }
 
+.flex-container p {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  z-index: 1000;
+}
+
+.flex-container h5 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  z-index: 1000;
+}
+
+.flex-container li:nth-child(1) {
+  grid-column-start: 1;
+}
+
+.flex-container p {
+  padding: 1rem 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  z-index: 1000;
+}
+
+.flex-container h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  z-index: 1000;
+}
+
+.flex-container li:nth-child(1) {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 .flex-container li:nth-child(1),
-.flex-container li:nth-child(2) {
+.flex-container li:nth-child(3) {
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -494,6 +545,27 @@ a {
   background-size: cover;
   border-radius: 3rem;
   cursor: pointer;
+}
+
+.flex-container li:nth-child(2),
+.flex-container li:nth-child(4) {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://media.tenor.com/WhD4AWN30YkAAAAC/clouds-moving.gif") no-repeat
+      center center;
+  background-size: cover;
+  border-radius: 3rem;
+  cursor: pointer;
+  transform: scaleX(-1);
+}
+
+#info {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: relative;
+  top: 21rem;
 }
 
 #womenContainer {
@@ -525,7 +597,7 @@ a {
 
 #womenClothes {
   width: 100%;
-  height: 70vh;
+  height: 140vh;
 }
 
 #yo {
