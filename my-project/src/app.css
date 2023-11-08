@@ -575,7 +575,7 @@ a {
   transform: scaleX(-1);
 }
 
-#info {
+.flex-container #info {
   grid-column-start: 1;
   grid-row-start: 1;
   position: relative;
