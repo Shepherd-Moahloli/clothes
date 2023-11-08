@@ -95,4 +95,21 @@ document.getElementById("buttonId").addEventListener("click", function () {
   searchLi.classList.remove("active");
 });
 
-// Mouse over event
+// Mouse over event change image
+
+var image1 = document.querySelector(".flex-container li:nth-child(1) img");
+var image2 = document.querySelector(".flex-container li:nth-child(2) img");
+
+image1.addEventListener("mouseover", function () {
+  image1.src = "images/image00007-removebg-preview.png";
+});
+image1.addEventListener("mouseout", function () {
+  image1.src = "images/image00010-removebg-preview.png";
+});
+
+image2.addEventListener("mouseover", function () {
+  image2.src = "images/image00042-removebg-preview.png";
+});
+image2.addEventListener("mouseout", function () {
+  image2.src = "images/image00046-removebg-preview.png";
+});
