@@ -188,6 +188,12 @@ article #shop {
   padding: 1rem 0;
 }
 
+article #shop #selected {
+  color: #000;
+  font-weight: bold;
+  border-bottom: 0.4rem solid #000;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -312,7 +318,6 @@ article header {
 a {
   text-decoration: none;
   color: #222;
-  font-weight: bold;
 }
 
 #collection {
@@ -331,7 +336,8 @@ a {
 }
 
 #collection button,
-#next-collection button {
+#next-collection button,
+#news button {
   z-index: 1000;
   color: #fff;
   grid-column-start: 2;
@@ -612,21 +618,26 @@ a {
 }
 #womenCollection {
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 #small {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: #adadad;
+  text-align: center;
 }
 
 #womenCollection h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-#womenCollection p {
-  width: 20%;
+#info-text {
+  width: 25%;
+  justify-content: space-between;
+  text-align: center;
+  word-wrap: break-word;
   margin: 0 auto;
 }
 
@@ -682,7 +693,7 @@ form {
 }
 
 input {
-  width: 60%;
+  width: 61%;
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
