@@ -646,6 +646,11 @@ a {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+#womenContainer::-webkit-scrollbar,
+#menContainer::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari and Opera */
+}
 #womenCollection,
 #menCollection {
   width: 100%;
