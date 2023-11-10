@@ -113,3 +113,16 @@ image2.addEventListener("mouseover", function () {
 image2.addEventListener("mouseout", function () {
   image2.src = "images/image00046-removebg-preview.png";
 });
+
+// Changing the title based on the hash
+
+function setTitleBasedOnHash() {
+  if (window.location.hash === "#shop") {
+    document.title = "Shop";
+  } else {
+    document.title = "Fashion";
+  }
+}
+setTitleBasedOnHash();
+
+window.addEventListener("hashchange", setTitleBasedOnHash);
