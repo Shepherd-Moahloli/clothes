@@ -99,6 +99,8 @@ document.getElementById("buttonId").addEventListener("click", function () {
 
 var image1 = document.querySelector(".flex-container li:nth-child(1) img");
 var image2 = document.querySelector(".flex-container li:nth-child(2) img");
+var image3 = document.querySelector(".flex-container li:nth-child(3) img");
+var image4 = document.querySelector(".flex-container li:nth-child(4) img");
 
 image1.addEventListener("mouseover", function () {
   image1.src = "images/image00007-removebg-preview.png";
@@ -114,8 +116,24 @@ image2.addEventListener("mouseout", function () {
   image2.src = "images/image00046-removebg-preview.png";
 });
 
+image3.addEventListener("mouseover", function () {
+  image3.src = "images/image00007-removebg-preview.png";
+});
+image3.addEventListener("mouseout", function () {
+  image3.src = "images/image00010-removebg-preview.png";
+});
+
+image4.addEventListener("mouseover", function () {
+  image4.src = "images/image00042-removebg-preview.png";
+});
+
+image4.addEventListener("mouseout", function () {
+  image4.src = "images/image00046-removebg-preview.png";
+});
+
 // Changing the title based on the hash
 
+/*
 function setTitleBasedOnHash() {
   if (window.location.hash === "#shop") {
     document.title = "Shop";
@@ -126,3 +144,4 @@ function setTitleBasedOnHash() {
 setTitleBasedOnHash();
 
 window.addEventListener("hashchange", setTitleBasedOnHash);
+*/
