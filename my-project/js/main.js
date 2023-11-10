@@ -1,4 +1,4 @@
-import Fuse from "fuse.js";
+import Fuse from "https://cdn.skypack.dev/fuse.js";
 
 document.getElementById("search").addEventListener("click", function () {
   document.getElementById("searchForm").style.display = "block";
