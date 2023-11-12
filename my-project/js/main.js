@@ -173,12 +173,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Change image when thumbnail is clicked
 
-  var thumbnails = Array.from(document.querySelectorAll(".thumbnails img"));
+  var thumbnails = Array.from(document.querySelectorAll("#thumbnails img"));
   var mainImage = document.querySelector("#main-image img");
 
-  thumbnails.forEach(function (thumbnail) {
+  var mainImages = [
+    "images/2.jpg",
+    "images/IMG_3753-1111.jpeg",
+    "images/IMG_3754-1111.jpeg",
+    "images/IMG_3756.jpeg",
+  ];
+
+  var mainImagesContainer = document.querySelector("#main-image");
+  var mainImagesElements = Array.from(mainImagesContainer.children);
+
+  console.log("Thumbnails:", thumbnails);
+  console.log("Main image:", mainImage);
+
+  thumbnails.forEach(function (thumbnail, index) {
     thumbnail.addEventListener("click", function (event) {
-      mainImage.src = event.target.src;
+      var newMainImage = mainImages[index];
+
+      setTimeout(function () {
+        mainImage.src = newMainImage;
+        mainImage.style.transform = "";
+      }, 500);
+
+      console.log("Thumbnail clicked");
     });
   });
 });
