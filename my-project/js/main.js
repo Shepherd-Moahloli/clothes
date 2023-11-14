@@ -201,4 +201,23 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Thumbnail clicked");
     });
   });
+
+  // create a container for the colors that will be useed
+  var colorContainer = document.getElementById("color-container");
+  colorContainer.style.display = "flex";
+  colorContainer.style.justifyContent = "center";
+  colorContainer.style.padding = "3rem 0";
+
+  var colors = ["#4053dd", "#cfcf26", "#dd4040"];
+
+  for (var i = 0; i < 3; i++) {
+    var color = document.createElement("div");
+    color.style.backgroundColor = colors[i];
+    color.style.width = "2rem";
+    color.style.height = "2rem";
+    color.style.borderRadius = "0.5rem";
+    color.style.border = "none";
+    color.style.margin = "0.5rem";
+    colorContainer.appendChild(color);
+  }
 });
