@@ -177,10 +177,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var mainImage = document.querySelector("#main-image img");
 
   var mainImages = [
-    "images/2.jpg",
-    "images/IMG_3753-1111.jpeg",
-    "images/IMG_3754-1111.jpeg",
-    "images/IMG_3756.jpeg",
+    "images/wetransfer_photos_2023-11-13_0759/image00045.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00037.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00048.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00049.jpg",
   ];
 
   var mainImagesContainer = document.querySelector("#main-image");
