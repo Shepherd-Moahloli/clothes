@@ -798,6 +798,15 @@ a {
   height: 155vh;
 }
 
+#product-component-1699864237151 {
+  padding: 0 5rem;
+  width: 15rem;
+}
+
+.shopify-buy__layout-vertical .shopify-buy__product__variant-selectors {
+  width: 40%;
+}
+
 #yo {
   height: 100%;
   width: 60%;
