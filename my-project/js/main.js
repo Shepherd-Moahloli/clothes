@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var colorContainer = document.getElementById("color-container");
   colorContainer.style.display = "flex";
   colorContainer.style.justifyContent = "center";
-  colorContainer.style.padding = "3rem 0";
+  colorContainer.style.padding = "1rem 0";
 
   var colors = ["#4053dd", "#cfcf26", "#dd4040"];
 

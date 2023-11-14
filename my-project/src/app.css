@@ -806,6 +806,19 @@ a {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+#top-content {
+  display: grid;
+}
+
+#top-content select {
+  width: 40%;
+  margin: 0 auto;
+  margin: 0.5rem auto;
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
 .shopify-buy__option-select-wrapper {
   width: 20%;
   font-size: 0.5rem;
