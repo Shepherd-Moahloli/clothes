@@ -791,6 +791,20 @@ a {
   padding: 4rem 0;
 }
 
+#more-clothes ul li {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+#more-clothes ul li:hover {
+  opacity: 1;
+}
+
+#more-clothes .selective {
+  opacity: 1;
+  cursor: none;
+}
+
 #more-clothes ul li:nth-child(2),
 #more-clothes ul li:nth-child(3),
 #more-clothes ul li:nth-child(4),
@@ -837,7 +851,6 @@ a {
   margin: 0 auto;
   margin: 0.5rem auto;
   background-color: #fff;
-
   border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;

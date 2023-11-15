@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.location.pathname.endsWith("women.html")) {
     if (image3) {
       image3.addEventListener("mouseover", function () {
-        image3.src = "images/image00007-removebg-preview.png";
+        image3.src = "images/image00040-removebg-preview.png";
       });
       image3.addEventListener("mouseout", function () {
-        image3.src = "images/image00010-removebg-preview.png";
+        image3.src = "images/image00041-removebg-preview.png";
       });
     } else {
       console.log("No element matched by .flex-container li:nth-child(3) img");
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.location.pathname.endsWith("women.html")) {
     if (image4) {
       image4.addEventListener("mouseover", function () {
-        image4.src = "images/image00042-removebg-preview.png";
+        image4.src = "images/image00036-removebg-preview.png";
       });
 
       image4.addEventListener("mouseout", function () {
-        image4.src = "images/image00046-removebg-preview.png";
+        image4.src = "images/image00038-removebg-preview.png";
       });
     } else {
       console.log("No element matched by .flex-container li:nth-child(4) img");
