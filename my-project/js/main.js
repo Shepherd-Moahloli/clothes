@@ -183,9 +183,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "images/wetransfer_photos_2023-11-13_0759/image00049.jpg",
   ];
 
-  var mainImagesContainer = document.querySelector("#main-image");
-  var mainImagesElements = Array.from(mainImagesContainer.children);
-
   console.log("Thumbnails:", thumbnails);
   console.log("Main image:", mainImage);
 
@@ -203,21 +200,72 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // create a container for the colors that will be useed
-  var colorContainer = document.getElementById("color-container");
-  colorContainer.style.display = "flex";
-  colorContainer.style.justifyContent = "center";
-  colorContainer.style.padding = "1rem 0";
 
-  var colors = ["#4053dd", "#cfcf26", "#dd4040"];
+  if (window.location.href.indexOf("buyWomen.html") > -1) {
+    var colorContainer = document.getElementById("color-container");
+    colorContainer.style.display = "flex";
+    colorContainer.style.justifyContent = "center";
+    colorContainer.style.padding = "1rem 0";
 
-  for (var i = 0; i < 3; i++) {
-    var color = document.createElement("div");
-    color.style.backgroundColor = colors[i];
-    color.style.width = "2rem";
-    color.style.height = "2rem";
-    color.style.borderRadius = "0.5rem";
-    color.style.border = "none";
-    color.style.margin = "0.5rem";
-    colorContainer.appendChild(color);
+    var colors = ["#4053dd", "#cfcf26", "#dd4040"];
+
+    for (var i = 0; i < 3; i++) {
+      var color = document.createElement("div");
+      color.style.backgroundColor = colors[i];
+      color.style.width = "2rem";
+      color.style.height = "2rem";
+      color.style.borderRadius = "0.5rem";
+      color.style.border = "none";
+      color.style.margin = "0.5rem";
+      colorContainer.appendChild(color);
+    }
   }
+
+  if (window.location.href.indexOf("buyWomen-1.html") > -1) {
+    var colorContainer2 = document.getElementById("color-container2");
+    colorContainer2.style.display = "flex";
+    colorContainer2.style.justifyContent = "center";
+    colorContainer2.style.padding = "1rem 0";
+
+    var colors = ["#4053dd", "navy"];
+
+    for (var i = 0; i < 2; i++) {
+      var color = document.createElement("div");
+      color.style.backgroundColor = colors[i];
+      color.style.width = "2rem";
+      color.style.height = "2rem";
+      color.style.borderRadius = "0.5rem";
+      color.style.border = "none";
+      color.style.margin = "0.5rem";
+      colorContainer2.appendChild(color);
+    }
+  }
+
+  // Change image when thumbnail is clicked SECOND
+
+  var thumbnails1 = Array.from(document.querySelectorAll("#thumbnails-1 img"));
+  var mainImageSecond = document.querySelector("#main-imageSecond img");
+
+  var mainImages1 = [
+    "images/wetransfer_photos_2023-11-13_0759/image00002.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00005.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00003.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00024.jpg",
+  ];
+
+  console.log("Thumbnails-1:", thumbnails1);
+  console.log("Main image-1:", mainImageSecond);
+
+  thumbnails1.forEach(function (thumbnail, index) {
+    thumbnail.addEventListener("click", function (event) {
+      var newMainImage = mainImages1[index];
+
+      setTimeout(function () {
+        mainImageSecond.src = newMainImage;
+        mainImageSecond.style.transform = "";
+      }, 500);
+
+      console.log("Thumbnail clicked");
+    });
+  });
 });

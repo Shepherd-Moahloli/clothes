@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOMEN | COLLECTION</title>
+    <link rel="stylesheet" href="src/app.css" />
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <div id="shop">
+          <nav>
+            <ul>
+              <a href="women.html"><li>WOMEN</li></a>
+              <a href="men.html"><li>MEN</li></a>
+              <a href="index.html#shop"><li>COLLECTION</li></a>
+            </ul>
+          </nav>
+          <a href="index.html">
+            <header>HOOD REVENGE</header>
+          </a>
+          <nav>
+            <ul>
+              <li id="search">SEARCH</li>
+              <li>ACCOUNT</li>
+              <li id="cart">CART</li>
+            </ul>
+          </nav>
+          <div id="searchBar" style="display: none">
+            <form id="searchForm" style="display: none">
+              <div id="inputContainer">
+                <input
+                  type="text"
+                  id="searchTerm"
+                  name="searchInput"
+                  placeholder="SEARCH"
+                  required
+                />
+                <button id="buttonId">
+                  <img src="images/xmark-solid.svg" alt="close-icon" />
+                </button>
+              </div>
+              <div id="resultsContainer"></div>
+            </form>
+          </div>
+          <div id="wordLocation"></div>
+        </div>
+        <div id="buy-collection">
+          <div id="buy-clothes">
+            <div id="thumbnails-1">
+              <img
+                class="selected-thumb"
+                src="images/wetransfer_photos_2023-11-13_0759/image00002.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00005.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00003.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00024.jpg"
+                alt=""
+              />
+            </div>
+            <div id="main-imageSecond">
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00002.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00005.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00003.jpg"
+                alt=""
+              />
+              <img
+                src="images/wetransfer_photos_2023-11-13_0759/image00024.jpg"
+                alt=""
+              />
+            </div>
+            <div id="prices">
+              <div id="product-component-1699864237151">
+                <div id="top-content">
+                  <h6>READY-TO-WEAR</h6>
+                  <p>
+                    THESE PAIR OF DENIM JEANS ARE MADE UP FROM DIFFERENT DENIM
+                    MATERIAL.
+                  </p>
+                  <div id="color-container2"></div>
+                </div>
+                <script type="text/javascript">
+                  /*<![CDATA[*/
+                  (function () {
+                    var scriptURL =
+                      "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+                    if (window.ShopifyBuy) {
+                      if (window.ShopifyBuy.UI) {
+                        ShopifyBuyInit();
+                      } else {
+                        loadScript();
+                      }
+                    } else {
+                      loadScript();
+                    }
+                    function loadScript() {
+                      var script = document.createElement("script");
+                      script.async = true;
+                      script.src = scriptURL;
+                      (
+                        document.getElementsByTagName("head")[0] ||
+                        document.getElementsByTagName("body")[0]
+                      ).appendChild(script);
+                      script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                      var client = ShopifyBuy.buildClient({
+                        domain: "9e8b01.myshopify.com",
+                        storefrontAccessToken:
+                          "d1eeb0afe06dde7446d73710755f1d49",
+                      });
+                      ShopifyBuy.UI.onReady(client).then(function (ui) {
+                        ui.createComponent("product", {
+                          id: "7228311666732",
+                          node: document.getElementById(
+                            "product-component-1699864237151"
+                          ),
+                          moneyFormat: "R%20%7B%7Bamount%7D%7D",
+                          options: {
+                            product: {
+                              contents: {
+                                img: false,
+                              },
+                              styles: {
+                                product: {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "calc(25% - 20px)",
+                                    "margin-left": "20px",
+                                    "margin-bottom": "50px",
+                                  },
+                                },
+                                button: {
+                                  "font-size": "16px",
+                                  "padding-top": "16px",
+                                  "padding-bottom": "16px",
+                                  ":hover": {
+                                    "background-color": "#000000",
+                                  },
+                                  "background-color": "#000000",
+                                  ":focus": {
+                                    "background-color": "#000000",
+                                  },
+                                  "border-radius": "15px",
+                                },
+                                quantityInput: {
+                                  "font-size": "16px",
+                                  "padding-top": "16px",
+                                  "padding-bottom": "16px",
+                                },
+                              },
+                              text: {
+                                button: "Add to cart",
+                              },
+                            },
+                            productSet: {
+                              styles: {
+                                products: {
+                                  "@media (min-width: 601px)": {
+                                    "margin-left": "-20px",
+                                  },
+                                },
+                              },
+                            },
+                            modalProduct: {
+                              contents: {
+                                img: false,
+                                imgWithCarousel: true,
+                                button: false,
+                                buttonWithQuantity: true,
+                              },
+                              styles: {
+                                product: {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "100%",
+                                    "margin-left": "0px",
+                                    "margin-bottom": "0px",
+                                  },
+                                },
+                                button: {
+                                  "font-size": "16px",
+                                  "padding-top": "16px",
+                                  "padding-bottom": "16px",
+                                  ":hover": {
+                                    "background-color": "#000000",
+                                  },
+                                  "background-color": "#000000",
+                                  ":focus": {
+                                    "background-color": "#000000",
+                                  },
+                                  "border-radius": "15px",
+                                },
+                                quantityInput: {
+                                  "font-size": "16px",
+                                  "padding-top": "16px",
+                                  "padding-bottom": "16px",
+                                },
+                              },
+                              text: {
+                                button: "Add to cart",
+                              },
+                            },
+                            option: {},
+                            cart: {
+                              styles: {
+                                button: {
+                                  "font-size": "16px",
+                                  "padding-top": "16px",
+                                  "padding-bottom": "16px",
+                                  ":hover": {
+                                    "background-color": "#000000",
+                                  },
+                                  "background-color": "#000000",
+                                  ":focus": {
+                                    "background-color": "#000000",
+                                  },
+                                  "border-radius": "15px",
+                                },
+                              },
+                              text: {
+                                total: "Subtotal",
+                                button: "Checkout",
+                              },
+                            },
+                            toggle: {
+                              styles: {
+                                toggle: {
+                                  "background-color": "#000000",
+                                  ":hover": {
+                                    "background-color": "#000000",
+                                  },
+                                  ":focus": {
+                                    "background-color": "#000000",
+                                  },
+                                },
+                                count: {
+                                  "font-size": "16px",
+                                },
+                              },
+                            },
+                          },
+                        });
+                        setTimeout(function () {
+                          var variantSelectors = document.querySelectorAll(
+                            ".shopify-buy__layout-vertical .shopify-buy__product__variant-selectors"
+                          );
+                          for (var i = 0; i < variantSelectors.length; i++) {
+                            variantSelectors[i].style.fontFamily =
+                              "Montserrat, sans-serif";
+                            variantSelectors[i].style.fontWeight = "bold";
+                            variantSelectors[i].style.backgroundColor =
+                              "#000000";
+                            variantSelectors[i].style.fontSize = "16px";
+                            variantSelectors[i].style.color = "#ffffff";
+                          }
+                        }, 1000);
+                      });
+                    }
+                  })();
+                  /*]]>*/
+                </script>
+              </div>
+            </div>
+            <div id="more-clothes">
+              <ul>
+                <li>YOU MAY ALSO LIKE</li>
+                <li>
+                  <img src="images/image00028-removebg-preview.png" alt="" />
+                </li>
+                <li>
+                  <img src="images/image00046-removebg-preview.png" alt="" />
+                </li>
+                <li>
+                  <img src="images/image00016-removebg-preview.png" alt="" />
+                </li>
+                <li>
+                  <img src="images/image00022-removebg-preview.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="news">
+            <form>
+              <h4>RECIEVE THE NEWSLETTER</h4>
+              <p>
+                TO STAY UPDATED ON OUR LATEST DROP, EVENTES AND EXCLUSIVE
+                CONTENT
+              </p>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ENTER EMAIL ADDRESS"
+                required
+              />
+
+              <button type="submit">SUBMIT</button>
+            </form>
+            <footer>
+              <div id="icons">
+                <h3>FOLLOW US</h3>
+                <img src="images/whatsapp.svg" alt="whatsapp-icon" />
+                <img src="images/instagram.svg" alt="instagram-icon" />
+                <img src="images/square-facebook.svg" alt="facebook-icon" />
+              </div>
+              <p>&copy; 2023 HOOD REVENGE</p>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6/dist/fuse.basic.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
