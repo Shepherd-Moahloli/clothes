@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.location.pathname.endsWith("women.html")) {
     if (image2) {
       image2.addEventListener("mouseover", function () {
-        image2.src = "images/image00042-removebg-preview.png";
+        image2.src = "images/image00022-removebg-preview.png";
       });
       image2.addEventListener("mouseout", function () {
-        image2.src = "images/image00046-removebg-preview.png";
+        image2.src = "images/image00028-removebg-preview.png";
       });
     } else {
       console.log("No element matched by .flex-container li:nth-child(2) img");
