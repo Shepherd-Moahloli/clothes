@@ -241,6 +241,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  if (window.location.href.indexOf("buyWomen-2.html") > -1) {
+    var colorContainer3 = document.getElementById("color-container3");
+    colorContainer3.style.display = "flex";
+    colorContainer3.style.justifyContent = "center";
+    colorContainer3.style.padding = "1rem 0";
+
+    var colors = ["#008000", "#cfcf26", "#c71585"];
+
+    for (var i = 0; i < 3; i++) {
+      var color = document.createElement("div");
+      color.style.backgroundColor = colors[i];
+      color.style.width = "2rem";
+      color.style.height = "2rem";
+      color.style.borderRadius = "0.5rem";
+      color.style.border = "none";
+      color.style.margin = "0.5rem";
+      colorContainer3.appendChild(color);
+    }
+  }
+
+  if (window.location.href.indexOf("buyWomen-3.html") > -1) {
+    var colorContainer4 = document.getElementById("color-container4");
+    colorContainer4.style.display = "flex";
+    colorContainer4.style.justifyContent = "center";
+    colorContainer4.style.padding = "1rem 0";
+
+    var colors = ["#4053dd", "navy"];
+
+    for (var i = 0; i < 2; i++) {
+      var color = document.createElement("div");
+      color.style.backgroundColor = colors[i];
+      color.style.width = "2rem";
+      color.style.height = "2rem";
+      color.style.borderRadius = "0.5rem";
+      color.style.border = "none";
+      color.style.margin = "0.5rem";
+      colorContainer4.appendChild(color);
+    }
+  }
   // Change image when thumbnail is clicked SECOND
 
   var thumbnails1 = Array.from(document.querySelectorAll("#thumbnails-1 img"));
@@ -263,6 +302,60 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         mainImageSecond.src = newMainImage;
         mainImageSecond.style.transform = "";
+      }, 500);
+
+      console.log("Thumbnail clicked");
+    });
+  });
+
+  // Change image when thumbnail is clicked THIRD
+  var thumbnails2 = Array.from(document.querySelectorAll("#thumbnails-2 img"));
+  var mainImageThird = document.querySelector("#main-imageThird img");
+
+  var mainImages2 = [
+    "images/wetransfer_photos_2023-11-13_0759/image00055.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00034.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00054.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00053.jpg",
+  ];
+
+  console.log("Thumbnails-2:", thumbnails2);
+  console.log("Main image-2:", mainImageThird);
+
+  thumbnails2.forEach(function (thumbnail, index) {
+    thumbnail.addEventListener("click", function (event) {
+      var newMainImage = mainImages2[index];
+
+      setTimeout(function () {
+        mainImageThird.src = newMainImage;
+        mainImageThird.style.transform = "";
+      }, 500);
+
+      console.log("Thumbnail clicked");
+    });
+  });
+
+  // Change image when thumbnail is clicked FOURTH
+  var thumbnails3 = Array.from(document.querySelectorAll("#thumbnails-3 img"));
+  var mainImageFourth = document.querySelector("#main-imageFourth img");
+
+  var mainImages3 = [
+    "images/wetransfer_photos_2023-11-13_0759/image00039.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00035.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00047.jpg",
+    "images/wetransfer_photos_2023-11-13_0759/image00041.jpg",
+  ];
+
+  console.log("Thumbnails-3:", thumbnails3);
+  console.log("Main image-3:", mainImageFourth);
+
+  thumbnails3.forEach(function (thumbnail, index) {
+    thumbnail.addEventListener("click", function (event) {
+      var newMainImage = mainImages3[index];
+
+      setTimeout(function () {
+        mainImageFourth.src = newMainImage;
+        mainImageFourth.style.transform = "";
       }, 500);
 
       console.log("Thumbnail clicked");

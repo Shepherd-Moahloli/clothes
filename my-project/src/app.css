@@ -706,21 +706,27 @@ a {
 }
 
 #buy-clothes #thumbnails,
-#buy-clothes #thumbnails-1 {
+#buy-clothes #thumbnails-1,
+#buy-clothes #thumbnails-2,
+#buy-clothes #thumbnails-3 {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: repeat(4, 20%);
 }
 
 #buy-clothes #thumbnails img:last-child::after,
-#buy-clothes #thumbnails-1 img:last-child::after {
+#buy-clothes #thumbnails-1 img:last-child::after,
+#buy-clothes #thumbnails-2 img:last-child::after,
+#buy-clothes #thumbnails-3 img:last-child::after {
   content: "";
   display: block;
   border-bottom: #222 solid 1px;
 }
 
 #buy-clothes #thumbnails img,
-#buy-clothes #thumbnails-1 img {
+#buy-clothes #thumbnails-1 img,
+#buy-clothes #thumbnails-2 img,
+#buy-clothes #thumbnails-3 img {
   width: 50%;
   grid-column-start: 2;
   border-radius: 1rem;
@@ -729,7 +735,9 @@ a {
 }
 
 #buy-clothes #thumbnails img:hover,
-#buy-clothes #thumbnails-1 img:hover {
+#buy-clothes #thumbnails-1 img:hover,
+#buy-clothes #thumbnails-2 img:hover,
+#buy-clothes #thumbnails-3 img:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -739,7 +747,9 @@ a {
 }
 
 #main-image,
-#main-imageSecond {
+#main-imageSecond,
+#main-imageThird,
+#main-imageFourth {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -749,7 +759,9 @@ a {
 }
 
 #main-image img,
-#main-imageSecond img {
+#main-imageSecond img,
+#main-imageThird img,
+#main-imageFourth img {
   height: 100%;
   width: 100%;
   border-radius: 3rem;
