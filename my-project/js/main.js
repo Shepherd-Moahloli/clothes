@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchBar.style.display = "none";
     searchLi.classList.remove("active");
   });
-
+  /*
   // Scroll event so that it can change styling when I scroll
 
   window.addEventListener("scroll", function () {
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mainImage.style.opacity = 1;
     }
   });
-
+*/
   // Change image when thumbnail is clicked
 
   var thumbnails = Array.from(document.querySelectorAll("#thumbnails img"));
