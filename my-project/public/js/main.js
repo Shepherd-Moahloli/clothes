@@ -361,4 +361,10 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Thumbnail clicked");
     });
   });
+
+  // show sign in and sign up form
+
+  document.getElementById("account").addEventListener("click", function () {
+    alert("show sign in and sign up form");
+  });
 });
