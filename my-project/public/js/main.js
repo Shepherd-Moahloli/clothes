@@ -365,6 +365,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // show sign in and sign up form
 
   document.getElementById("account").addEventListener("click", function () {
-    alert("show sign in and sign up form");
+    var accountModal = document.getElementById("accountModal");
+    var account = document.getElementById("account");
+    if (accountModal.style.display === "grid") {
+      accountModal.style.display = "none";
+      account.classList.remove("active");
+    } else {
+      accountModal.style.display = "grid";
+      account.classList.add("active");
+    }
   });
 });

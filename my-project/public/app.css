@@ -974,3 +974,26 @@ footer {
   opacity: 1;
   cursor: pointer;
 }
+
+#accountModal {
+  background-color: #f0f0f0; /* Replace with your desired color */
+  width: 50%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 20% 80%;
+  position: fixed; /* This will make the modal cover the full height of the page */
+  right: 0;
+  top: 10%; /* This will align the modal to the right side of the page */
+  overflow: auto; /* This will add a scrollbar if the content is taller than the page */
+  z-index: 10000; /* This will make the modal appear above everything on the page */
+}
+
+#accountModal h2 {
+  margin: 0;
+}
+
+#accountModal button {
+  width: 2rem;
+  height: 2rem;
+}
