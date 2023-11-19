@@ -29,20 +29,32 @@
             </ul>
           </nav>
           <div id="accountModal" style="display: none">
-            <h2>Account Information</h2>
-            <button
-              onclick="document.getElementById('accountModal').style.display='none', document.getElementById('account').classList.remove('active');"
-            >
-              <img
-                src="images/xmark-solid.svg"
-                style="width: 1rem; height: 1rem"
-                alt=""
-              />
-            </button>
-            <h3>Sign Up</h3>
-            <!-- Add your sign up form here -->
-            <h3>Sign In</h3>
-            <!-- Add your sign in form here -->
+            <div id="accountDetails">
+              <div id="welcome">
+                <p>WELCOME!</p>
+
+                <h1>HOOD REVENGE</h1>
+                <p class="member">
+                  Not yet a member? <a href="#"> REGISTER NOW</a>
+                </p>
+              </div>
+              <h2>Account Information</h2>
+              <button
+                onclick="document.getElementById('accountModal').style.display='none', document.getElementById('account').classList.remove('active');"
+              >
+                <img
+                  src="images/xmark-solid.svg"
+                  style="width: 1rem; height: 1rem"
+                  alt=""
+                />
+              </button>
+              <div id="signIn-info">
+                <h3>Sign Up</h3>
+                <!-- Add your sign up form here -->
+                <h3>Sign In</h3>
+                <!-- Add your sign in form here -->
+              </div>
+            </div>
           </div>
           <div id="searchBar" style="display: none">
             <form id="searchForm" style="display: none">
