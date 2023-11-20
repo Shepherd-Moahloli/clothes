@@ -38,7 +38,48 @@
                   Not yet a member? <a href="#"> REGISTER NOW</a>
                 </p>
               </div>
-              <h2>Account Information</h2>
+
+              <div id="signIn-info">
+                <p>Log in</p>
+                <h3 style="display: none">Sign Up</h3>
+                <!-- Add your sign up form here -->
+                <form id="signInForm">
+                  <label for="emailOrUsername" style="opacity: 0.4"
+                    >Email or Username:</label
+                  >
+                  <input
+                    type="text"
+                    id="emailOrUsername"
+                    name="emailOrUsername"
+                    placeholder="ENTER YOUR EMAIL OR USERNAME"
+                    style="opacity: 0.2; width: 100%"
+                    required
+                  />
+
+                  <label for="password" style="opacity: 0.4">Password:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="ENTER YOUR PASSWORD"
+                    style="opacity: 0.2; width: 100%"
+                    required
+                  />
+
+                  <input
+                    type="submit"
+                    value="Log in now"
+                    style="
+                      width: 100%;
+                      background-color: #000;
+                      color: #fff;
+                      font-weight: bold;
+                      padding: 1.4rem;
+                    "
+                  />
+                </form>
+                <!-- Add your sign in form here -->
+              </div>
               <button
                 onclick="document.getElementById('accountModal').style.display='none', document.getElementById('account').classList.remove('active');"
               >
@@ -48,12 +89,6 @@
                   alt=""
                 />
               </button>
-              <div id="signIn-info">
-                <h3>Sign Up</h3>
-                <!-- Add your sign up form here -->
-                <h3>Sign In</h3>
-                <!-- Add your sign in form here -->
-              </div>
             </div>
           </div>
           <div id="searchBar" style="display: none">

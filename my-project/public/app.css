@@ -1002,6 +1002,9 @@ footer {
   border: 1px solid #000;
   padding: 1rem;
   justify-content: end;
+  position: fixed;
+  right: 9rem;
+  top: 45rem;
 }
 
 #accountModal button,
@@ -1042,9 +1045,35 @@ footer {
 }
 
 #accountDetails .member a {
-  border-bottom: #000 solid 1px;
+  border-bottom: #000 solid 2px;
+  font-weight: bold;
 }
 #accountDetails h1 {
   font-size: 2rem;
   padding: 12rem 0;
+}
+
+#signInForm {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  display: grid;
+  text-align: justify;
+}
+
+#signInForm input {
+  width: 80%;
+}
+
+#signInForm input[type="text"],
+#signInForm input[type="password"] {
+  width: 100%;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid black;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  padding-top: 0;
+  margin: 1rem 0;
+  text-align: justify;
 }
