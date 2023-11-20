@@ -45,7 +45,7 @@
                 <!-- Add your sign up form here -->
                 <form id="signInForm">
                   <label for="emailOrUsername" style="opacity: 0.4"
-                    >Email or Username:</label
+                    >EMAIL OR USERNAME:</label
                   >
                   <input
                     type="text"
@@ -56,7 +56,7 @@
                     required
                   />
 
-                  <label for="password" style="opacity: 0.4">Password:</label>
+                  <label for="password" style="opacity: 0.4">PASSWORD:</label>
                   <input
                     type="password"
                     id="password"
@@ -65,6 +65,15 @@
                     style="opacity: 0.2; width: 100%"
                     required
                   />
+                  <label for="keepMeLoggedIn" style="opacity: 1">
+                    <input
+                      type="checkbox"
+                      id="keepMeLoggedIn"
+                      name="keepMeLoggedIn"
+                      style="width: 5%"
+                    />
+                    Keep me logged in
+                  </label>
 
                   <input
                     type="submit"
@@ -75,10 +84,47 @@
                       color: #fff;
                       font-weight: bold;
                       padding: 1.4rem;
+                      margin: 0;
                     "
                   />
+                  <p>FORGOT YOUR PASSWORD?</p>
+                  <div
+                    id="google"
+                    style=" width: 100%; height: 7rem"
+                  >
+                    <ul
+                      style="
+                        display: grid;
+                        place-items: center;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        justify-content: space-between;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        gap: 1rem;
+                      "
+                    >
+                      <li
+                        onclick="location.href='https://accounts.google.com/o/oauth2/v2/auth';"
+                        "
+                        ;
+                      >
+                        Google
+                      </li>
+                      <li
+                        onclick="location.href='https://www.facebook.com/v2.8/dialog/oauth';"
+                      >
+                        Facebook 
+                      </li>
+                      <li
+                        onclick="location.href='https://api.twitter.com/oauth/authenticate';"
+                      >
+                        Twitter
+                      </li>
+                    </ul>
+                  </div>
                 </form>
-                <!-- Add your sign in form here -->
               </div>
               <button
                 onclick="document.getElementById('accountModal').style.display='none', document.getElementById('account').classList.remove('active');"

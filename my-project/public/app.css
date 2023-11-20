@@ -1053,16 +1053,23 @@ footer {
   padding: 12rem 0;
 }
 
+#signInForm p {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+  font-weight: bold;
+  border-bottom: #000 solid 2px;
+  width: 45%;
+  margin-left: 14rem;
+}
+
 #signInForm {
   width: 80%;
   margin: 0 auto;
   font-size: 1rem;
   display: grid;
   text-align: justify;
-}
-
-#signInForm input {
-  width: 80%;
 }
 
 #signInForm input[type="text"],
@@ -1076,4 +1083,8 @@ footer {
   padding-top: 0;
   margin: 1rem 0;
   text-align: justify;
+}
+
+#google ul li {
+  grid-row-start: 2;
 }
