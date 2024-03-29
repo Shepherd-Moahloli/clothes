@@ -440,7 +440,7 @@ a {
   grid-template-columns: 50% 50%;
   grid-template-rows: 5% 90% 5%;
   padding: 2rem;
-  height: 80%;
+  height: 60%;
   width: 140%;
   filter: drop-shadow(15px 15px 9px #e4e3e3);
   font-family: Helvetica, Arial, sans-serif;

@@ -63,6 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   document.getElementById("search").addEventListener("click", function () {
+    console.log("Search bar clicked");
+    if (isSubmitting) {
+      console.log("Form is being submitted, not hiding the search bar");
+      return;
+    }
+    
     document.getElementById("searchForm").style.display = "block";
   });
 
@@ -85,10 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var fuse = new Fuse(list, options);
 
+
+  var isSubmitting = false;
+
   document
     .getElementById("searchForm")
     .addEventListener("submit", function (event) {
       event.preventDefault();
+      isSubmitting = true;
+      
 
       console.log(
         "Search bar display value:",
@@ -122,10 +133,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         window.location.hash = searchTerm;
+
+        isSubmitting = false;
       }
     });
 
   document.getElementById("search").addEventListener("click", function (event) {
+
+    if (isSubmitting) { 
+      console.log("Not hiding the searchBar, Submitting");
+      return;
+    }
+
     var searchBar = document.getElementById("searchBar");
     var searchForm = document.getElementById("searchForm");
     var searchLi = document.getElementById("search");
